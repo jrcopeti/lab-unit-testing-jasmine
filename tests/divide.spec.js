@@ -17,8 +17,13 @@ describe("Iteration 2", () => {
     it("The function should return undefined if any of the arguments is not provided", () => {
       expect(divide()).toEqual(undefined);
     });
-    it("The function should return undefined if the the second argument is 0", () => {
+    it("The function should return undefined if the second argument is 0", () => {
       expect(divide(1, 0)).toEqual(undefined);
+    });
+    it("The function should return undefined if any of the arguments is not a number", () => {
+      expect(divide("1", 6)).toEqual(undefined);
+      expect(divide(1, "6")).toEqual(undefined);
+      expect(divide("10", "5")).toEqual(undefined);
     });
   });
 });

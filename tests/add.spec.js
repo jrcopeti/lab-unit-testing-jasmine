@@ -20,8 +20,8 @@ describe("Iteration 1 | Getting Started", () => {
       expect(add(undefined, 1)).toEqual(undefined);
     });
     it("The function should return undefined if any of the two arguments is not a number.", () => {
-      expect(add(typeof "number", 1)).toEqual(undefined);
-      expect(add(1, typeof "number")).toEqual(undefined);
+      expect(add("2", 1)).toEqual(undefined);
+      expect(add(1, "2")).toEqual(undefined);
 
     });
   });
